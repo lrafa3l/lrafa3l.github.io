@@ -1,0 +1,23 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.welcome-text {
+    font-size: 2em;
+    color: #007eff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
