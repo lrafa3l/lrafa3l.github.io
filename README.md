@@ -1,6 +1,6 @@
 # [Portfólio](https://www.landorafael.me)
 
-Este portfólio foi criado para demonstrar minhas competências em desenvolvimento web. O site é construído com HTML, CSS, JavaScript, BootStrap e hospedado em Github Pages, mas com o domínio personalizado pela [Namecheap](https://www.namecheap.com/).
+Este portfólio foi criado para demonstrar minhas competências em desenvolvimento web. O site é construído com _HTML, CSS, JavaScript, BootStrap_ e hospedado em **Github Pages**, mas com o domínio personalizado pela [Namecheap](https://www.namecheap.com/).
 
 ## Estrutura
 
