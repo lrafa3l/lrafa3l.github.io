@@ -1251,59 +1251,6 @@ a.brand:focus {
     margin-top: 4rem
 }
 
-.project-box {
-    display: block;
-    position: relative;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease
-}
-
-.project-box:before {
-    content: '';
-    position: absolute;
-    right: 100%;
-    margin-right: 20px;
-    width: 15px;
-    top: 8px;
-    border-top: 1px solid #fff
-}
-
-.project-box:after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    height: 15px;
-    right: 100%;
-    margin-right: 27px;
-    border-left: 1px solid #fff
-}
-
-.project-box h5 {
-    margin: 0;
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 300
-}
-
-.project-category {
-    color: #fff;
-    margin-top: .5rem
-}
-
-.project-box:hover {
-    color: #ffeb00;
-    text-decoration: none
-}
-
-.project-box:hover h5 {
-    color: #ffeb00 !important
-}
-
-.project-box:hover .project-category {
-    color: #fff
-}
-
 .link-arrow {
     float: right;
     margin-top: -2.2rem
@@ -1477,6 +1424,80 @@ a.brand:focus {
     color: #fff;
     font-size: 1.2rem;
     margin-bottom: 5rem
+}
+
+/* Certifications Section */
+.certifications-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.certification-item {
+    scroll-snap-align: start;
+    min-width: 250px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+}
+
+.cert-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.certification-item:hover .cert-logo {
+    filter: grayscale(0%);
+}
+
+.cert-info {
+    text-align: center;
+}
+
+.cert-info h4 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.cert-info p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+}
+
+.circle-logo {
+    border-radius: 50%;
+}
+
+.more {
+    width: 170px !important;
+    height: 120px !important;
+}
+
+
+/* For desktop layout */
+@media (min-width: 992px) {
+    .certifications-slider {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        overflow-x: visible;
+        gap: 30px;
+    }
 }
 
 @media(min-width:576px) {
